@@ -27,21 +27,25 @@ body {
 }
 
 .turbulence.plane {
-    animation: turbulance 10s infinite;
+    animation: turbulance 1s infinite linear;
+}
+
+@keyframes takeOff {
+    
 }
 
 @keyframes turbulance {
     0% {
-        transform: translate(0px);
+        transform: translate(0px, 0px);
     } 
     30% {
-        transform: translate(50px);
+        transform: translate(0px, 40px);
     }
     60% {
-        transform: translate(0px);
+        transform: translate(0px, 0px);
     }
     100% {
-        transform: translate(50px);
+        transform: translate(0px, 40px);
     }
 }
 
