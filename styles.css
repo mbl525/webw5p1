@@ -22,6 +22,37 @@ body {
     top:0%;
 }
 
+.background.slide-left {
+    animation: fly 10s infinite linear;
+}
+
+.turbulence.plane {
+    animation: turbulance 10s infinite;
+}
+
+@keyframes turbulance {
+    0% {
+        transform: translate(0px);
+    } 
+    30% {
+        transform: translate(50px);
+    }
+    60% {
+        transform: translate(0px);
+    }
+    100% {
+        transform: translate(50px);
+    }
+}
+
+@keyframes fly {
+    from {
+        left: 0%;
+    } to {
+        left: -100%;
+    }
+}
+
 .trees {
     display: flex;
     justify-content: space-around;
